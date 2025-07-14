@@ -3,6 +3,4 @@ aiohttp
 pydantic
 pydantic-settings
 
-# Ganti playwright dengan versi yang lebih ringan dan patch untuk serverless
-playwright-core==1.44.0
-playwright-on-lambda==1.2.0
+playwright
