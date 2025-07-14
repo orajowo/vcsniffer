@@ -3,4 +3,5 @@ aiohttp
 pydantic
 pydantic-settings
 
-playwright
+playwright-core
+playwright-on-lambda
