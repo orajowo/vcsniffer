@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# 1. Instal semua dependensi Python dari requirements.txt
-echo "Installing Python dependencies..."
-pip install -r requirements.txt
+# Vercel sudah menjalankan `pip install` secara otomatis sebelum skrip ini,
+# jadi kita tidak perlu melakukannya lagi.
 
-# 2. Jalankan perintah instalasi Playwright secara manual
-#    Perintah ini akan men-download browser Chromium beserta dependensi sistem yang diperlukan.
+# Langsung jalankan instalasi browser Playwright menggunakan modul Python.
+# Ini cara yang lebih andal untuk menghindari masalah "command not found".
 echo "Installing Playwright browsers..."
-playwright install --with-deps chromium
+python -m playwright install --with-deps chromium
 
-echo "Build script finished successfully."
+echo "Build script finished."
