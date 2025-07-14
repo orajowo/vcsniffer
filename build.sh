@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Vercel sudah menjalankan `pip install` secara otomatis sebelum skrip ini,
-# jadi kita tidak perlu melakukannya lagi.
+echo "Installing Playwright browsers using specific python version..."
 
-# Langsung jalankan instalasi browser Playwright menggunakan modul Python.
-# Ini cara yang lebih andal untuk menghindari masalah "command not found".
-echo "Installing Playwright browsers..."
-python -m playwright install --with-deps chromium
+# [FIX] Gunakan python3.11 secara eksplisit untuk menjalankan modul playwright.
+# Pastikan versi ini (3.11) sama dengan yang Anda atur di dasbor Vercel.
+python3.11 -m playwright install --with-deps chromium
 
 echo "Build script finished."
