@@ -1,5 +1,5 @@
 aiohttp
 pydantic
 pydantic-settings
-playwright-core==1.44.0
-playwright-on-lambda==1.2.0
+playwright-core
+playwright-on-lambda
