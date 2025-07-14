@@ -2,4 +2,3 @@ aiohttp
 pydantic
 pydantic-settings
 playwright
-playwright
